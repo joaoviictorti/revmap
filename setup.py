@@ -6,7 +6,7 @@ import os
 meta = {}
 here = os.path.abspath(os.path.dirname(__file__))
 
-with open(f"{here}/revmap/__meta__.py") as arquivo:
+with open(f"{here}/revmap/__meta__.py",encoding="utf-8") as arquivo:
     exec(arquivo.read(), meta)
 
 with open("README.md", "r",encoding="utf-8") as arq:

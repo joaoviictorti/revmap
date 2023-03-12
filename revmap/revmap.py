@@ -18,7 +18,7 @@ def argumentos():
     parser.add_argument("--ip",type=str, dest="ip",action="store",help="Insert ip",required=True)
     parser.add_argument("--port",type=str,dest="porta",action="store",help="Insert port",required=True)
     parser.add_argument("--payload",type=str,dest="payload",action="store",choices=["bash","python","powershell","nc","php","perl","ruby","telnet","nodejs","golang"],help="Insert payload",required=True)
-    parser.add_argument("--encode",type=str,dest="encode",action="store",choices=['base64',"hexadecimal","urlencode","shell"],help="Insert encode",default=None)
+    parser.add_argument("--encode",type=str,dest="encode",action="store",choices=['base64',"hexadecimal","urlencode","shell"],help="Insert encode",required=True)
     args = parser.parse_args()
 
     match args.payload:
