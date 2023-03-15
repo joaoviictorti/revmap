@@ -1,0 +1,17 @@
+site_name: revmap
+repo_url: https://github.com/joaoviictorti/revmap
+repo_name: joaoviictorti/revmap
+edit_uri: tree/main/docs
+
+theme:
+  name: material
+  language: pt-BR
+  logo: assets/revmap.png
+  favicon: assets/revmap.png
+
+
+markdown_extensions:
+  - attr_list
+
+extra_css:
+  - css/center.css
