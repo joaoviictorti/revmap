@@ -1,5 +1,5 @@
-__version__ = '0.0.2'
-__version_tuple__ = version_tuple = (0, 0, 2)
+__version__ = '0.0.3'
+__version_tuple__ = version_tuple = (0, 0, 3)
 __title__ = 'revmap'
 __description__ = (
     'Tool that generates reverse shell in multiple languages and encodes'
