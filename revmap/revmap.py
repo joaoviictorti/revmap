@@ -9,7 +9,7 @@ def banner():
 |  _| -_| | |     | .'| . |
 |_| |___|\_/|_|_|_|__,|  _|
                       |_|  
-        v0.0.1 - @joaoviictorti                          
+        v0.0.4 - @joaoviictorti                          
 """
 
 

