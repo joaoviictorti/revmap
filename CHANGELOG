@@ -1,3 +1,4 @@
+- 0.0.5: Adding CLI, History, Sessions, autocomplete with new prompt lib
 - 0.0.4: reset version in files
 - 0.0.3: Added CI
 - 0.0.2: Resetting revamp for syntax using blue check

