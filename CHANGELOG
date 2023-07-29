@@ -1,3 +1,4 @@
+0.0.7: Reajuste da documentação README.md
 0.0.6: Adicionada dependência do Poetry.
 0.0.5: Adicionada Interface de Linha de Comando (CLI), Histórico, Sessões e autocompletar com nova biblioteca de prompt.
 0.0.4: Versão resetada nos arquivos.
