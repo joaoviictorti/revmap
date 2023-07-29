@@ -15,7 +15,8 @@
   <a href="#características">Características</a> •
   <a href="#instalação">Instalação</a> •
   <a href="#forma-de-utilização"> Forma de utilização</a> •
-  <a href="#executando-revmap">Executando revmap</a>
+  <a href="#detalhes">Detalhes</a> •
+  <a href="#executando-revmap">Executando revmap</a>  
 </p>
 
 ---
