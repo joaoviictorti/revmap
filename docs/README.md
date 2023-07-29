@@ -4,16 +4,15 @@
 
 
 
-<h4 align="center">Tool that generates reverse shell in multiple languages and encodes </h4>
+<h4 align="center">Ferramenta que gera shell reverso em várias linguagens de programação e codifica </h4>
 
 
 <p align="center">
-  <a href="#características">Features</a> •
-  <a href="#instalação">Install</a> •
-  <a href="#forma-de-utilização">How to use</a> •
-  <a href="#executando-revmap">Usage</a>
+  <a href="#características">Características</a> •
+  <a href="#instalação">Instalação</a> •
+  <a href="#forma-de-utilização"> Forma de utilização</a> •
+  <a href="#executando-revmap">Executando revmap</a>
 </p>
-
 ---
 
 
@@ -31,13 +30,14 @@ Projetei o `revmap` para cumprir todas as responsabilidades para gera payloads e
 ```sh
 revmap --ip 192.168.4.80 --port 4444
 ```
-Isso exibirá a ajuda para a ferramenta. Aqui estão todos os switches que ele suporta:
+
+# Detalhes
+
 ```yaml
  ___ ___ _ _ _____ ___ ___ 
 |  _| -_| | |     | .'| . |
 |_| |___|\_/|_|_|_|__,|  _|
                       |_|  
-        v0.0.8 - @joaoviictorti 
 
 options:
   -h, --help    show this help message and exit
@@ -62,7 +62,6 @@ revmap --ip 192.168.4.103 --port 80
 |  _| -_| | |     | .'| . |
 |_| |___|\_/|_|_|_|__,|  _|
                       |_|
-        v0.0.8 - @joaoviictorti
 
 [tab] for commands suggestions
 192.168.4.103 (80) [revmap] # bash

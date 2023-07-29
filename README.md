@@ -1,17 +1,21 @@
 <img width=100% src="https://capsule-render.vercel.app/api?type=waving&color=0000FF&height=120&section=header"/>
 
-[![Typing SVG](https://readme-typing-svg.herokuapp.com/?color=0000FF&size=32&center=true&vCenter=true&width=1000&height=30&lines=revmap)](https://git.io/typing-svg)
+![revmap_console](docs/assets/revmap.png)
 
+<p align="center">
+	<a href="https://www.python.org/"><img src="https://img.shields.io/badge/made%20with-python-red"></a>
+	<a href="#"><img src="https://img.shields.io/badge/platform-osx%2Flinux%2Fwindows-blueviolet"></a>
+	<a href="https://github.com/joaoviictorti/revmap/releases"><img src="https://img.shields.io/github/release/joaoviictorti/revmap?color=blue"></a>
+</p>
 
-
-<h4 align="center">Tool that generates reverse shell in multiple languages and encodes </h4>
+<h4 align="center">Ferramenta que gera shell reverso em várias linguagens de programação e codifica</h4>
 
 
 <p align="center">
-  <a href="#características">Features</a> •
-  <a href="#instalação">Install</a> •
-  <a href="#forma-de-utilização">How to use</a> •
-  <a href="#executando-revmap">Usage</a>
+  <a href="#características">Características</a> •
+  <a href="#instalação">Instalação</a> •
+  <a href="#forma-de-utilização"> Forma de utilização</a> •
+  <a href="#executando-revmap">Executando revmap</a>
 </p>
 
 ---
@@ -29,22 +33,14 @@ Projetei o `revmap` para cumprir todas as responsabilidades para gera payloads e
 # Forma de utilização
 
 ```sh
-revmap --ip 192.168.4.80 --port 4444
+revmap --ip 192.168.4.80 --port 4444 --payload bash --encode urlencode
+revmap --ip 192.168.4.80 --port 4444 --payload bash 
+revmap --ip 192.168.4.80 --port 4444 --payload python
+revmap --ip 192.168.4.80 --port 4444 --payload perl --encode base64
 ```
-Isso exibirá a ajuda para a ferramenta. Aqui estão todos os switches que ele suporta:
-```yaml
- ___ ___ _ _ _____ ___ ___ 
-|  _| -_| | |     | .'| . |
-|_| |___|\_/|_|_|_|__,|  _|
-                      |_|  
-        v0.0.8 - @joaoviictorti 
+# Detalhes
 
-options:
-  -h, --help    show this help message and exit
-  --version     show program's version number and exit
-  --ip IP       Insert ip
-  --port PORTA  Insert port
-```
+![revmap_console](docs/assets/help.png)
 
 # Instalação
 
@@ -56,6 +52,7 @@ pip3 install revmap
 
 # Executando revmap
 
-![logo_do_projeto](https://github.com/joaoviictorti/revmap/blob/main/images/revmap_console.png)
+![revmap_console](docs/assets/revmap_console.png)
+
 
 <img width=100% src="https://capsule-render.vercel.app/api?type=waving&color=0000FF&height=120&section=footer"/>
