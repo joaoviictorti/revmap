@@ -37,7 +37,7 @@ Isso exibirá a ajuda para a ferramenta. Aqui estão todos os switches que ele s
 |  _| -_| | |     | .'| . |
 |_| |___|\_/|_|_|_|__,|  _|
                       |_|  
-        v0.0.6 - @joaoviictorti 
+        v0.0.7 - @joaoviictorti 
 
 options:
   -h, --help    show this help message and exit

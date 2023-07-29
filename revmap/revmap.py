@@ -20,7 +20,7 @@ def argumentos() -> None:
         usage='revmap --ip 192.168.4.80 --port 4444',
         formatter_class=RawTextHelpFormatter,
     )
-    parser.add_argument('--version', action='version', version='revmap 0.0.6')
+    parser.add_argument('--version', action='version', version='revmap 0.0.7')
     parser.add_argument(
         '--ip',
         type=str,

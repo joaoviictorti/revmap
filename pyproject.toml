@@ -1,6 +1,6 @@
 [tool.poetry]
 name = "revmap"
-version = "0.0.6"
+version = "0.0.7"
 description = "Ferramenta que gera shell reverso em várias linguagens de programação e codifica"
 authors = ["João <joaovictorti08@gmail.com>"]
 license = "MIT License"
