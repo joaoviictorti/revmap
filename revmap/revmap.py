@@ -9,7 +9,7 @@ def banner() -> str:
 |  _| -_| | |     | .'| . |
 |_| |___|\_/|_|_|_|__,|  _|
                       |_|  
-        v0.0.6 - @joaoviictorti                          
+        v0.0.8 - @joaoviictorti                          
 """
 
 
@@ -20,7 +20,7 @@ def argumentos() -> None:
         usage='revmap --ip 192.168.4.80 --port 4444',
         formatter_class=RawTextHelpFormatter,
     )
-    parser.add_argument('--version', action='version', version='revmap 0.0.7')
+    parser.add_argument('--version', action='version', version='revmap 0.0.8')
     parser.add_argument(
         '--ip',
         type=str,

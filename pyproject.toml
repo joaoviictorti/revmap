@@ -1,10 +1,10 @@
 [tool.poetry]
 name = "revmap"
-version = "0.0.7"
+version = "0.0.8"
 description = "Ferramenta que gera shell reverso em várias linguagens de programação e codifica"
 authors = ["João <joaovictorti08@gmail.com>"]
 license = "MIT License"
-readme = "README.md"
+readme = "docs/README.md"
 homepage = "https://github.com/joaoviictorti/revmap"
 
 [tool.poetry.dependencies]
