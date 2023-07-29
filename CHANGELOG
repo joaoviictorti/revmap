@@ -1,5 +1,6 @@
-- 0.0.5: Adding CLI, History, Sessions, autocomplete with new prompt lib
-- 0.0.4: reset version in files
-- 0.0.3: Added CI
-- 0.0.2: Resetting revamp for syntax using blue check
-- 0.0.1: Initial revmap PyPI release.
+0.0.6: Adicionada dependência do Poetry.
+0.0.5: Adicionada Interface de Linha de Comando (CLI), Histórico, Sessões e autocompletar com nova biblioteca de prompt.
+0.0.4: Versão resetada nos arquivos.
+0.0.3: Adicionado CI (Integração Contínua).
+0.0.2: Reformulação do revmap para sintaxe usando software blue.
+0.0.1: Lançamento inicial do revmap no PyPI.

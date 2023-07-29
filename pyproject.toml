@@ -1,0 +1,19 @@
+[tool.poetry]
+name = "revmap"
+version = "0.0.6"
+description = "Ferramenta que gera shell reverso em várias linguagens de programação e codifica"
+authors = ["João <joaovictorti08@gmail.com>"]
+license = "MIT License"
+readme = "README.md"
+homepage = "https://github.com/joaoviictorti/revmap"
+
+[tool.poetry.dependencies]
+python = "^3.11"
+prompt-toolkit = "3.0.36"
+
+[tool.poetry.scripts]
+revmap = "revmap.revmap:argumentos"
+
+[build-system]
+requires = ["poetry-core"]
+build-backend = "poetry.core.masonry.api"
