@@ -56,6 +56,6 @@ pip3 install revmap
 
 # Executando revmap
 
-![logo_do_projeto](images/revmap_console.png)
+![logo_do_projeto](https://github.com/joaoviictorti/revmap/blob/main/images/revmap_console.png)
 
 <img width=100% src="https://capsule-render.vercel.app/api?type=waving&color=0000FF&height=120&section=footer"/>
