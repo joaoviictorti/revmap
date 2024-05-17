@@ -1,5 +1,3 @@
-<img width=100% src="https://capsule-render.vercel.app/api?type=waving&color=0000FF&height=120&section=header"/>
-
 ![revmap_console](docs/assets/revmap.png)
 
 <p align="center">
@@ -55,5 +53,3 @@ pip3 install revmap
 
 ![revmap_console](docs/assets/revmap_console.png)
 
-
-<img width=100% src="https://capsule-render.vercel.app/api?type=waving&color=0000FF&height=120&section=footer"/>
